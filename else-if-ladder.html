@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading</title>
+    <style>
+        body{
+            margin: 300px 500px;
+            width: 150px;
+            border: 7px solid red;
+            background-color: brown;
+            /* font : white; not working */
+            line-height: 1.5;
+            display: flexbox;
+            align-items: center;
+            border-radius: 25px;
+            box-shadow: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <script>
+        mark=prompt("enter your total mark here")
+        if(mark>40){
+            if(mark>90){
+                document.write("<b>PASSED</b> <br> A+ GRADE")
+            }
+            else if(mark>80 && mark<90){
+                document.write("<b>PASSED</b> <br> u got A GRADE")
+            }
+            else if(mark>70 && mark<80){
+                document.write("<b>PASSED</b> <br> u got B GRADE")
+            }
+            else if(mark>60 && mark<70){
+                document.write("<b>PASSED</b> <br> u got C GRADE")
+            }
+            else if(mark>50 && mark<60){
+                document.write("<b>PASSED</b> <br> u got D GRADE")
+            }
+            else if(mark>40 && mark<50){
+                document.write("<b>PASSED</b> <br> u got E GRADE")
+            }  
+        }
+        else{
+            document.write(" <b>FAILED</b> <br> u got F GRADE")
+        }
+    </script>
+    </center>
+</body>
+</html>
