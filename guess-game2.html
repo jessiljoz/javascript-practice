@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS GAME</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            margin: auto auto ;
+            background-image: linear-gradient(green,rgb(89, 235, 89),rgb(243, 243, 98));
+            background-repeat: repeat;
+            background-size: cover;
+        }
+        h1,span{
+            margin-top: 50px;
+            border: greenyellow;
+            width: 400px;
+            height: 100px;
+            text-decoration: underline greenyellow wavy 2px ;
+        }
+        .a{
+            margin-top: 30px;
+            width: 300px;
+            height: 100px;
+            border: rgba(0,255,0,0.8) groove 7px;
+            border-radius: 10px;
+            text-align: center;
+            vertical-align: bottom;   
+        }
+        .b{
+            width: 200px;
+            height: 100px;
+            border: rgba(0,178,0,0.8) dashed 7px;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: bottom;              
+        }
+        .b,h3{
+            text-decoration: underline black double 1px;
+        }
+        .c{
+            background-color:green;
+            border-radius: 30px;
+            padding: 7px;
+            outline:5px solid greenyellow;
+            font-weight: bolder;
+        }
+    </style> 
+</head>
+<body>
+    <center>
+    <h1><span>Guess Game: 10 kulla number onu solu</span></h1>
+<div class="a">
+   <script>
+    let randomnumber=Math.floor(Math.random()*10)+1;
+    let guess=prompt('guess a number between 1 and 10:')
+    if (guess==randomnumber){document.write("Congratz! U Have Guessed The Number Correctly <br><br> Guessed Number is ","<b>"+randomnumber+"</b>")}
+    
+    else{document.write("Sorry , Your guess is Wrong , Try Again<br><br> Guessed Number is: ","<b>"+randomnumber+"</b>","</br>Your Guess: ","<b>"+guess+"</b>")}
+</script> 
+</div><br><br>
+<div class="b"><br>
+    <h3>play again</h3><br>
+    <button onclick="window.location.reload();" class="c">ok</button>
+</div><br>
+<p>Thank You for Visiting, Come Again... </p>
+<br>
+</center>
+</body>
+</html>
